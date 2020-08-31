@@ -258,3 +258,140 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 		}
 	}
 }
+
+#ToGetConsultation {
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.text-content { 
+		width: 850px;
+
+		.title {
+			padding: 60px 0;
+
+			.top {
+				display: flex;
+				align-items: center;
+				h2 { margin-left: 30px; }
+
+				.hl {
+					height: 2px;
+					width: 106px;
+					background-color: $sub-color;
+				}
+			}
+
+			.bottom p {
+					margin-top: 5px;
+					margin-left: 136px;
+					width: 380px;
+					color: #5e5e5e;
+					font-size: 14px;
+			}
+		}
+
+		form {
+			padding-bottom: 40px;
+			display: grid;
+			grid-template-areas: 
+			"email message message"
+			"phone message message"
+			"name message message"
+			"topic none submit";
+			justify-items: start;
+
+			.email { grid-area: email; }
+			.phone { grid-area: phone; }
+			.name { grid-area: name; }
+			.topic { grid-area: topic; }
+			.message { grid-area: message; }
+			.submit { grid-area: submit; }
+
+			& > div { width: 100%; }
+
+			.description {
+				margin: 25px auto 10px 5px;
+			}
+
+			input.text {
+				border: 1px solid #E6E6E6;
+				padding: 10px;
+				line-height: 18px;
+				width: calc(100% - 50px);
+			}
+
+			textarea {
+				border: 1px solid #E6E6E6;
+				padding: 10px;
+				line-height: 18px;
+				width: calc(100% - 22px);
+				height: 216px;
+				resize: none;
+			}
+
+			select {
+				border: 1px solid #E6E6E6;
+				padding: 10px;
+				padding-right: 30px;
+				width: calc(100% - 30px);
+				option { height: 18px; }
+			}
+
+			.button {
+				display: inline-flex;
+				align-items: center;
+				justify-self: right;
+				align-self: end;
+
+				border: 1px solid $sub-color;
+				.left { padding: 0px 25px; font-weight: 500; }
+				.right {
+					padding: 14px 8px;
+					background-color: $sub-color;
+				}
+			}
+		}
+	}
+
+	img { width: calc(100% - 850px); }
+}
+
+#OurAdvantages {
+	background-image: url('images/our-advantages-background.png');
+	background-size: cover;
+	background-position: 0 100%;
+	color: white;
+
+	.overlay { background-color: rgba(13,13,24,.55); }
+
+	.container {
+		padding: 65px 15px 40px;
+		height: 180px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		text-align: center;
+		width: 335px;
+		h3 { margin: 15px auto; font-size: 18px; }
+		p { color: #D3D2D2 }
+
+		.arrow {
+			border: 2px solid $sub-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 36px;
+			width: 36px;
+		}
+	}
+}

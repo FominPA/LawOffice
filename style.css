@@ -282,3 +282,166 @@ p {
       #AboutCompany .container .button .right {
         padding: 14px 8px;
         background-color: #FFC222; }
+
+#ToGetConsultation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+#ToGetConsultation .text-content {
+  width: 850px; }
+  #ToGetConsultation .text-content .title {
+    padding: 60px 0; }
+    #ToGetConsultation .text-content .title .top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #ToGetConsultation .text-content .title .top h2 {
+        margin-left: 30px; }
+      #ToGetConsultation .text-content .title .top .hl {
+        height: 2px;
+        width: 106px;
+        background-color: #FFC222; }
+    #ToGetConsultation .text-content .title .bottom p {
+      margin-top: 5px;
+      margin-left: 136px;
+      width: 380px;
+      color: #5e5e5e;
+      font-size: 14px; }
+  #ToGetConsultation .text-content form {
+    padding-bottom: 40px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "email message message" "phone message message" "name message message" "topic none submit";
+    justify-items: start; }
+    #ToGetConsultation .text-content form .email {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: email; }
+    #ToGetConsultation .text-content form .phone {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      grid-area: phone; }
+    #ToGetConsultation .text-content form .name {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: name; }
+    #ToGetConsultation .text-content form .topic {
+      -ms-grid-row: 4;
+      -ms-grid-column: 1;
+      grid-area: topic; }
+    #ToGetConsultation .text-content form .message {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 3;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 2;
+      grid-area: message; }
+    #ToGetConsultation .text-content form .submit {
+      -ms-grid-row: 4;
+      -ms-grid-column: 3;
+      grid-area: submit; }
+    #ToGetConsultation .text-content form > div {
+      width: 100%; }
+    #ToGetConsultation .text-content form .description {
+      margin: 25px auto 10px 5px; }
+    #ToGetConsultation .text-content form input.text {
+      border: 1px solid #E6E6E6;
+      padding: 10px;
+      line-height: 18px;
+      width: calc(100% - 50px); }
+    #ToGetConsultation .text-content form textarea {
+      border: 1px solid #E6E6E6;
+      padding: 10px;
+      line-height: 18px;
+      width: calc(100% - 22px);
+      height: 216px;
+      resize: none; }
+    #ToGetConsultation .text-content form select {
+      border: 1px solid #E6E6E6;
+      padding: 10px;
+      padding-right: 30px;
+      width: calc(100% - 30px); }
+      #ToGetConsultation .text-content form select option {
+        height: 18px; }
+    #ToGetConsultation .text-content form .button {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      justify-self: right;
+      -ms-flex-item-align: end;
+      align-self: end;
+      border: 1px solid #FFC222; }
+      #ToGetConsultation .text-content form .button .left {
+        padding: 0px 25px;
+        font-weight: 500; }
+      #ToGetConsultation .text-content form .button .right {
+        padding: 14px 8px;
+        background-color: #FFC222; }
+
+#ToGetConsultation img {
+  width: calc(100% - 850px); }
+
+#OurAdvantages {
+  background-image: url("images/our-advantages-background.png");
+  background-size: cover;
+  background-position: 0 100%;
+  color: white; }
+  #OurAdvantages .overlay {
+    background-color: rgba(13, 13, 24, 0.55); }
+  #OurAdvantages .container {
+    padding: 65px 15px 40px;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #OurAdvantages .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 335px; }
+    #OurAdvantages .item h3 {
+      margin: 15px auto;
+      font-size: 18px; }
+    #OurAdvantages .item p {
+      color: #D3D2D2; }
+    #OurAdvantages .item .arrow {
+      border: 2px solid #FFC222;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 36px;
+      width: 36px; }
