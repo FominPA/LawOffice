@@ -23,8 +23,13 @@ h1 {
   font-size: 30px;
   text-transform: uppercase; }
 
+h2 {
+  font-weight: 500;
+  font-size: 24px; }
+
 p {
-  font-family: 'PT Serif', serif; }
+  font-family: 'PT Serif', serif;
+  font-size: 14px; }
 
 .container {
   margin: auto;
@@ -208,7 +213,6 @@ p {
       font-size: 18px;
       margin: 25px auto; }
     #OurServices .items .item p {
-      font-size: 14px;
       margin-bottom: 65px; }
     #OurServices .items .item .bottom {
       display: -webkit-box;
@@ -236,3 +240,45 @@ p {
         #OurServices .items .item .bottom .button .right {
           padding: 14px 8px;
           background-color: #FFC222; }
+
+#AboutCompany {
+  background-image: url("images/about-company-background.png");
+  background-size: cover;
+  background-position: 0 35%;
+  color: white; }
+  #AboutCompany .overlay {
+    background-color: rgba(13, 13, 24, 0.57); }
+  #AboutCompany .container {
+    padding: 35px 0 45px;
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start; }
+    #AboutCompany .container p {
+      width: 600px;
+      color: #d3d2d2; }
+    #AboutCompany .container .button {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: white;
+      border: 1px solid #FFC222; }
+      #AboutCompany .container .button .left {
+        padding: 0px 25px;
+        font-weight: 500; }
+      #AboutCompany .container .button .right {
+        padding: 14px 8px;
+        background-color: #FFC222; }
