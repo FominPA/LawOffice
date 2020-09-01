@@ -576,3 +576,61 @@ p {
         background-color: #FFC222;
         border-color: #FFC222;
         color: white; }
+
+#Contacts {
+  background-color: #595959;
+  color: white;
+  padding: 15px 0; }
+  #Contacts .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #Contacts .information {
+    width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start; }
+    #Contacts .information > * {
+      margin: 15px 0; }
+    #Contacts .information h4 {
+      font-weight: 500;
+      font-size: 16px; }
+    #Contacts .information p {
+      font-family: 'Roboto', sans-serif;
+      color: #D3D2D2; }
+    #Contacts .information .button {
+      display: block;
+      background-color: #FFC222;
+      padding: 15px 20px; }
+    #Contacts .information .bottom {
+      font-size: 14px; }
+      #Contacts .information .bottom .mail {
+        margin: 15px 0; }
+      #Contacts .information .bottom i {
+        color: #FFCD21;
+        width: 14px;
+        margin-right: 15px; }
+      #Contacts .information .bottom .phone i {
+        font-size: 12px; }
+  #Contacts .map iframe {
+    height: 250px; }
+
+footer {
+  background-color: #303030;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0; }
