@@ -396,3 +396,126 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 		}
 	}
 }
+
+
+
+#News {
+	background-color: #f9f9f9;
+
+	.title {
+		padding: 60px 0;
+
+		.top {
+			display: flex;
+			align-items: center;
+			h2 { margin-left: 30px; }
+
+			.hl {
+				height: 2px;
+				width: 106px;
+				background-color: $sub-color;
+			}
+		}
+
+		.bottom {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 5px;
+			font-size: 14px;
+			align-items: start;
+
+			p {
+				margin-left: 136px;
+				width: 380px;
+				color: #5e5e5e;
+			}
+
+			.button {
+				border: 3px solid #E6E6E6;
+				padding: 10px 38px;
+			}
+		}
+	}
+
+	.news-content {
+
+		.slider {
+			display: flex;
+			justify-content: space-between;
+
+			.opened-news-article {
+				background-color: #fff;
+				box-shadow: 0 0 27px 7px rgba(91,89,89, .14);
+				width: calc(50% - 155px);
+				padding: 0 70px;
+
+				.quote-icon {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 35px;
+					width: 65px;
+					background-color: $sub-color;
+					color: white;
+				}
+
+				.text {
+					padding: 35px 0;
+					p { margin: 25px 0; }
+					h3 { font-weight: 500; }
+					h4 { font-weight: 500; font-size: 14px; }
+				}
+			}
+
+			.closed-news-article {
+				width: 265px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding-bottom: 35px;
+
+				.news-photo {
+					width: 265px;
+					height: 190px;
+					background-size: cover;
+					.day {
+						display: inline-block;
+						margin-left: 10px;
+						padding: 10px;
+						padding-top: 30px;
+						background-color: $sub-color;
+						color: white;
+					}
+				}
+
+				.news-photo-1 { background-image: url('images/news-photo-1.png'); }
+				.news-photo-2 { background-image: url('images/news-photo-2.png'); }
+
+				p { color: #5e5e5e; }
+			}
+		}
+
+		.bottom {
+			display: flex;
+			justify-content: center;
+			padding: 30px 0;
+
+			.arrow {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				border: 1px solid #908E8E;
+				color: #908e8e;
+				cursor: pointer;
+				margin: 0 9px;
+				&:hover {
+					background-color: $sub-color;
+					border-color: $sub-color;
+					color: white;
+				}
+			}
+		}
+	}
+}
