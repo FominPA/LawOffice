@@ -12,7 +12,8 @@ html { background-color: #282828 }
 // General styles
 
 body {
-	width: 1920px;
+	max-width: 1920px;
+	min-width: 1170px;
 	margin: 50px auto;
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
