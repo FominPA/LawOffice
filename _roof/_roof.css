@@ -1,0 +1,70 @@
+.roof__top {
+  background-color: #303030; }
+
+.roof__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: #CBCACB; }
+  .roof__contacts i {
+    color: #FFCD21; }
+
+.roof__phone i {
+  font-size: 12px; }
+
+.roof__mail {
+  margin-left: 30px; }
+
+.roof__feedback-button {
+  display: block;
+  background-color: #FFC222;
+  padding: 15px 20px; }
+
+.roof__bottom {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px 0; }
+
+.roof__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .roof__menu .menu-item {
+    margin-left: 12px; }
+
+.logo {
+  display: block;
+  font-size: 30px; }
+
+.logo__left {
+  font-weight: 500;
+  color: #FFC222; }
+
+.logo__right {
+  font-weight: 100;
+  color: #212121; }
+
+.menu-item {
+  display: block;
+  color: #323232;
+  padding: 10px 18px;
+  border: 1px solid white; }
+  .menu-item:hover {
+    border-color: #FFC222; }
+
+@media (max-width: 640px) {
+  .roof__top-inner {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .roof__contacts {
+    display: none; } }
+
+@media (max-width: 680px) {
+  .roof_bottom {
+    display: block;
+    text-align: center; }
+  .roof__menu {
+    display: inline-block; }
+  .roof__menu .menu-item {
+    margin: 5px 0px; } }
