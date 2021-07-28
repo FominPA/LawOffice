@@ -1,6 +1,9 @@
 @import url("fontawesome/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("_container/_container.css");
+@import url("_overlay/_overlay.css");
+@import url("_section-title/_section-title.css");
 * {
   margin: 0;
   padding: 0; }
@@ -34,80 +37,6 @@ h4 {
 p {
   font-family: 'PT Serif', serif;
   font-size: 14px; }
-
-.container {
-  margin: auto;
-  padding: 0 15px;
-  width: 1140px; }
-
-@media (min-width: 1920px) {
-  .container {
-    min-width: calc(50% - 30px); } }
-
-@media (max-width: 1190px) {
-  .container {
-    width: calc(100% - 30px); } }
-
-.overlay {
-  background-color: rgba(13, 13, 24, 0.57);
-  color: white; }
-  .overlay a {
-    color: white; }
-
-.title {
-  padding: 60px 0; }
-  .title .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .title .top h2 {
-      margin-left: 30px; }
-    .title .top .hl {
-      height: 2px;
-      width: 106px;
-      background-color: #FFC222; }
-  .title .bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 5px;
-    font-size: 14px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start; }
-    .title .bottom p {
-      margin-left: calc(106px + 30px);
-      max-width: 380px;
-      color: #5e5e5e; }
-    .title .bottom .button {
-      display: inline-block;
-      border: 3px solid #E6E6E6;
-      padding: 10px 38px; }
-
-@media (max-width: 800px) {
-  .title .top .hl {
-    width: 0; }
-  .title .top h2 {
-    margin-left: 0; }
-  .title .bottom p {
-    margin-left: 0; } }
-
-@media (max-width: 680px) {
-  .title {
-    text-align: center; }
-    .title .top h2 {
-      margin: auto; }
-    .title .bottom {
-      margin: 0;
-      display: block; }
-      .title .bottom p {
-        margin: 5px auto; } }
 
 .yellow-button {
   display: -webkit-inline-box;
@@ -202,15 +131,18 @@ p {
     #Header .slaider .arrow:hover {
       background-color: #FFC222;
       cursor: pointer; }
-  #Header .slaider .first-slaid {
+  #Header .slaider .slaid {
+    display: none;
     text-align: center;
-    width: 615px;
+    max-width: 615px;
     margin: 0 20px; }
-    #Header .slaider .first-slaid p {
+    #Header .slaider .slaid p {
       font-size: 18px;
       line-height: 24px;
       color: #D3D2D2;
       margin: 20px auto 45px; }
+  #Header .slaider .visibility {
+    display: block; }
 
 @media (max-width: 640px) {
   #Header header .container {
@@ -234,6 +166,10 @@ p {
     border: none; }
     #Header .slaider .arrow:hover {
       background: none; } }
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 1.6em; } }
 
 @media (max-width: 1024px) {
   #Header .slaider .container {

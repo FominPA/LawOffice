@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1140px; }
+
+@media (min-width: 1920px) {
+  .container {
+    min-width: calc(50% - 30px); } }
+
+@media (max-width: 1190px) {
+  .container {
+    width: calc(100% - 30px); } }

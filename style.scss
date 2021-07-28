@@ -39,90 +39,11 @@ h4 {
 
 p { font-family: 'PT Serif', serif; font-size: 14px; }
 
-// --------------------- Elements --------------------- //
+// ---------------------- Blocks ---------------------- //
 
-.container {
-	margin: auto;
-	padding: 0 15px;
-	width: 1140px;
-}
-
-@media (min-width: 1920px) {
-	.container {
-		min-width: calc(50% - 30px);
-	}
-}
-
-@media (max-width: 1190px) {
-	.container { width: calc(100% - 30px); }
-}
-
-.overlay {
-	background-color: rgba(13,13,24,.57);
-	color: white;
-	a { color: white; }
-}
-
-.title {
-	padding: 60px 0;
-
-	.top {
-		display: flex;
-		align-items: center;
-		h2 { margin-left: 30px; }
-
-		.hl {
-			height: 2px;
-			width: 106px;
-			background-color: $sub-color;
-		}
-	}
-
-	.bottom {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 5px;
-		font-size: 14px;
-		align-items: start;
-
-		p {
-			margin-left: calc(106px + 30px);
-			max-width: 380px;
-			color: #5e5e5e;
-		}
-
-		.button {
-			display: inline-block;
-			border: 3px solid #E6E6E6;
-			padding: 10px 38px;
-		}
-	}
-}
-
-@media (max-width: 800px) {
-	.title {
-		.top {
-			.hl { width: 0; }
-			h2 { margin-left: 0; }
-		}
-
-		.bottom p { margin-left: 0; }
-	}
-}
-
-@media (max-width: 680px) {
-	.title {
-		text-align: center;
-
-		.top h2 { margin: auto; }
-
-		.bottom {
-			margin: 0;
-			p { margin: 5px auto; }
-			display: block;
-		}
-	}
-}
+@import url('_container/_container.css');
+@import url('_overlay/_overlay.css');
+@import url('_section-title/_section-title.css');
 
 .yellow-button {
 	display: inline-flex;
@@ -136,7 +57,7 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 	}
 }
 
-// ---------------------- Blocks ---------------------- //
+// ------------------ Page Elements ------------------- //
 
 #Header {
 	
@@ -211,9 +132,10 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 			&:hover { background-color: $sub-color; cursor: pointer; }
 		}
 
-		.first-slaid {
+		.slaid {
+			display: none;
 			text-align: center;
-			width: 615px;
+			max-width: 615px;
 			margin: 0 20px;
 
 			p {
@@ -223,6 +145,8 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 				margin: 20px auto 45px;
 			}
 		}
+
+		.visibility { display: block; }
 	}
 }
 
@@ -246,6 +170,10 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 		border: none;
 		&:hover { background: none; }
 	}
+}
+
+@media (max-width: 370px) {
+	h1 { font-size: 1.6em }
 }
 
 @media (max-width: 1024px) {
