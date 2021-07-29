@@ -3,12 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 $sub-color: #FFC222;
 
-// ---------------------- Reset ----------------------- //
+// -------------------- Normalize --------------------- //
 
 * { margin: 0;	padding: 0; }
 a { text-decoration: none; color: black; }
-
-// ------------------- General style ------------------ //
 
 body {
 	min-width: 320px;
@@ -39,23 +37,14 @@ h4 {
 
 p { font-family: 'PT Serif', serif; font-size: 14px; }
 
+.text_underline { text-decoration: underline; }
+
 // ---------------------- Blocks ---------------------- //
 
 @import url('_container/_container.css');
 @import url('_overlay/_overlay.css');
 @import url('_section-title/_section-title.css');
-
-.yellow-button {
-	display: inline-flex;
-	align-items: center;
-
-	border: 1px solid $sub-color;
-	.left { padding: 0px 20px; font-weight: 500; }
-	.right {
-		padding: 14px 8px;
-		background-color: $sub-color;
-	}
-}
+@import url('_yellow-button/_yellow-button.css');
 
 // ------------------- Page Elements ------------------ //
 
@@ -63,66 +52,8 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 @import url('_roof/_roof.css');
 @import url('_slider/_slider.css');
 @import url('_header/_header.css');
-
-#OurServices {
-	.items {
-		display: flex;
-		justify-content: space-between;
-		padding: 10px 0 35px;
-
-		.item {
-			padding: 30px 35px;
-			width: 290px;
-			text-align: center;
-			background-color: #F9F9F9;
-			box-shadow: 0 0 27px 7px rgba(91,89,89, .14);
-			h3 { margin: 25px auto; }
-			p { margin-bottom: 65px; }
-
-			.bottom {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				.underline { text-decoration: underline; }
-			}
-		}
-	}
-}
-
-@media (max-width: 1140px) {
-	#OurServices .items {
-		display: block;
-		.item { margin: 15px auto; }
-	}
-}
-
-@media (max-width: 380px) {
-	#OurServices .items .item {
-		width: 240px;
-		padding: 30px 20px;
-	}
-}
-
-
-#AboutCompany {
-	background-image: url('images/about-company-background.png');
-	background-size: cover;
-	background-position: 0 35%;
-
-	.container {
-		padding: 35px 0 45px;
-		height: 220px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: start;
-		p { max-width: 600px; color: #d3d2d2; }
-	}
-}
-
-@media (max-width: 680px) {
-	#AboutCompany .container { height: 290px; }
-}
+@import url('_our-service/_our-service.css');
+@import url('_about-company/_about-company.css');
 
 #ToGetConsultation {
 	.container {

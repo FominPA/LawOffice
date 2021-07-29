@@ -4,9 +4,12 @@
 @import url("_container/_container.css");
 @import url("_overlay/_overlay.css");
 @import url("_section-title/_section-title.css");
+@import url("_yellow-button/_yellow-button.css");
 @import url("_roof/_roof.css");
 @import url("_slider/_slider.css");
 @import url("_header/_header.css");
+@import url("_our-service/_our-service.css");
+@import url("_about-company/_about-company.css");
 * {
   margin: 0;
   padding: 0; }
@@ -41,91 +44,8 @@ p {
   font-family: 'PT Serif', serif;
   font-size: 14px; }
 
-.yellow-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 1px solid #FFC222; }
-  .yellow-button .left {
-    padding: 0px 20px;
-    font-weight: 500; }
-  .yellow-button .right {
-    padding: 14px 8px;
-    background-color: #FFC222; }
-
-#OurServices .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 10px 0 35px; }
-  #OurServices .items .item {
-    padding: 30px 35px;
-    width: 290px;
-    text-align: center;
-    background-color: #F9F9F9;
-    -webkit-box-shadow: 0 0 27px 7px rgba(91, 89, 89, 0.14);
-    box-shadow: 0 0 27px 7px rgba(91, 89, 89, 0.14); }
-    #OurServices .items .item h3 {
-      margin: 25px auto; }
-    #OurServices .items .item p {
-      margin-bottom: 65px; }
-    #OurServices .items .item .bottom {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      #OurServices .items .item .bottom .underline {
-        text-decoration: underline; }
-
-@media (max-width: 1140px) {
-  #OurServices .items {
-    display: block; }
-    #OurServices .items .item {
-      margin: 15px auto; } }
-
-@media (max-width: 380px) {
-  #OurServices .items .item {
-    width: 240px;
-    padding: 30px 20px; } }
-
-#AboutCompany {
-  background-image: url("images/about-company-background.png");
-  background-size: cover;
-  background-position: 0 35%; }
-  #AboutCompany .container {
-    padding: 35px 0 45px;
-    height: 220px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start; }
-    #AboutCompany .container p {
-      max-width: 600px;
-      color: #d3d2d2; }
-
-@media (max-width: 680px) {
-  #AboutCompany .container {
-    height: 290px; } }
+.text_underline {
+  text-decoration: underline; }
 
 #ToGetConsultation .container {
   display: -webkit-box;

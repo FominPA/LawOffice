@@ -1,0 +1,16 @@
+.yellow-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #FFC222; }
+
+.yellow-button__left {
+  padding: 0px 20px;
+  font-weight: 500; }
+
+.yellow-button__right {
+  padding: 14px 8px;
+  background-color: #FFC222; }

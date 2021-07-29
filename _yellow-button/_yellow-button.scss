@@ -1,0 +1,15 @@
+$sub-color: #FFC222;
+
+.yellow-button {
+	display: inline-flex;
+	align-items: center;
+
+	border: 1px solid $sub-color;
+}
+
+.yellow-button__left { padding: 0px 20px; font-weight: 500; }
+
+.yellow-button__right {
+	padding: 14px 8px;
+	background-color: $sub-color;
+}
