@@ -45,6 +45,7 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 @import url('_overlay/_overlay.css');
 @import url('_section-title/_section-title.css');
 @import url('_yellow-button/_yellow-button.css');
+@import url('_feedback-form/_feedback-form.css');
 
 // ------------------- Page Elements ------------------ //
 
@@ -54,142 +55,8 @@ p { font-family: 'PT Serif', serif; font-size: 14px; }
 @import url('_header/_header.css');
 @import url('_our-service/_our-service.css');
 @import url('_about-company/_about-company.css');
-
-#ToGetConsultation {
-	.container {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		flex-wrap: wrap;
-	}
-
-	.text-content { 
-		width: 850px;
-
-		form {
-			padding-bottom: 40px;
-			display: grid;
-			grid-template-areas: 
-			"email message message"
-			"phone message message"
-			"name message message"
-			"topic none submit";
-			justify-items: start;
-
-			.email { grid-area: email; }
-			.phone { grid-area: phone; }
-			.name { grid-area: name; }
-			.topic { grid-area: topic; }
-			.message { grid-area: message; }
-			.submit { grid-area: submit; }
-
-			& > div { width: 100%; }
-
-			.description {
-				margin: 25px auto 10px 5px;
-			}
-
-			input.text {
-				border: 1px solid #E6E6E6;
-				padding: 10px;
-				line-height: 18px;
-				width: calc(100% - 50px);
-			}
-
-			textarea {
-				border: 1px solid #E6E6E6;
-				padding: 10px;
-				line-height: 18px;
-				width: calc(100% - 22px);
-				height: 216px;
-				resize: none;
-			}
-
-			select {
-				border: 1px solid #E6E6E6;
-				padding: 10px;
-				padding-right: 30px;
-				width: calc(100% - 30px);
-				option { height: 18px; }
-			}
-
-			.yellow-button {  
-				justify-self: right;
-				align-self: flex-end;
-			}
-		}
-	}
-
-	img { width: calc(100% - 850px); }
-}
-
-@media (max-width: 1100px) {
-	#ToGetConsultation {
-		img { display: none; }
-		.text-content { width: 100%; }
-	}
-}
-
-@media (max-width: 500px) {
-	#ToGetConsultation {
-		.text-content form {
-			display: flex;
-			flex-direction: column;
-			input.text { width: calc(100% - 22px); }
-			select { width: calc(100% - 2px); }
-			.submit { margin-top: 20px; align-self: flex-end; }
-		}
-	}
-}
-
-#OurAdvantages {
-	background-image: url('images/our-advantages-background.png');
-	background-size: cover;
-	background-position: 0 100%;
-
-	.container {
-		padding: 65px 15px 40px;
-		height: 180px;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.item {
-		display: flex;
-		flex-direction: column;
-		justify-content: start;
-		align-items: center;
-		text-align: center;
-		width: 335px;
-		h3 { margin: 15px auto; }
-		p { color: #D3D2D2 }
-
-		.arrow {
-			border: 2px solid $sub-color;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 36px;
-			width: 36px;
-		}
-	}
-}
-
-@media (max-width: 1180px) {
-	#OurAdvantages {
-		background-position: 80% 0;
-
-		.container {
-			display: block;
-			height: auto;
-			.item { margin: 50px auto; }
-		}
-	}
-}
-
-@media (max-width: 380px) {
-	#OurAdvantages .container .item { width: 100%; }
-}
+@import url('_get-consultation/_get-consultation.css');
+@import url('_our-advantages/_our-advantages.css');
 
 #News {
 	background-color: #f9f9f9;

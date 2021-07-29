@@ -149,9 +149,9 @@
 		</div>
 	</div>
 
-	<div id="ToGetConsultation">
-		<div class="container">
-			<div class="text-content">
+	<div class="get-consultation">
+		<div class="get-consultation__inner container">
+			<div class="get-consultation__content">
 				<div class="section-title">
 					<div class="section-title__top">
 						<div class="section-title__hl"></div>
@@ -161,62 +161,62 @@
 						<p class="section-title__text">Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех судебных инстанциях.</p>
 					</div>
 				</div>
-				<form action="#">
-					<div class="email">
-						<div class="description">E-mail</div>
-						<input class="text" type="text">
+				<form action="#" method="POST" class="get-consultation__form feedback-form">
+					<div class="feedback-form__item feedback-form__item_email">
+						<div class="feedback-form__item-description">E-mail</div>
+						<input class="feedback-form__item-text" type="text">
 					</div>
 
-					<div class="phone">
-						<div class="description">Контактный телефон</div>
-						<input class="text" type="text">
+					<div class="feedback-form__item feedback-form__item_phone">
+						<div class="feedback-form__item-description">Контактный телефон</div>
+						<input class="feedback-form__item-text" type="text">
 					</div>
 
-					<div class="name">
-						<div class="description">ФИО</div>
-						<input class="text" type="text">
+					<div class="feedback-form__item feedback-form__item_name">
+						<div class="feedback-form__item-description">ФИО</div>
+						<input class="feedback-form__item-text" type="text">
 					</div>
 
-					<div class="topic">
-						<div class="description">Тема вопроса</div>
-						<select name="#" id="#">
-						<option>------</option>
+					<div class="feedback-form__item feedback-form__item_topic">
+						<div class="feedback-form__item-description">Тема вопроса</div>
+						<select name="#" id="" class="feedback-form__menu">
+						<option class="feedback-form__menu-item">------</option>
 					</select>
 					</div>
 
-					<div class="message">
-						<div class="description">Сообщение</div>
-						<textarea></textarea>
+					<div class="feedback-form__item feedback-form__item_message">
+						<div class="feedback-form__item-description">Сообщение</div>
+						<textarea class="feedback-form__item-message"></textarea>
 					</div>
 
-					<a href="#" class="yellow-button submit">
+					<button type="submit" name="submit" class="yellow-button feedback-form__item_submit">
 						<div class="yellow-button__left">Получить консультацию</div>
 						<div class="yellow-button__right">
 							<i class="fas fa-angle-right"></i>
 						</div>
-					</a>
+					</button>
 				</form>
 			</div>
-			<img src="images/specialist.png" alt="specialist">
+			<img src="_get-consultation/images/specialist.png" alt="specialist" class="get-consultation__aside-image">
 		</div>
 	</div>
-	<div id="OurAdvantages">
-		<div class="overlay">
-			<div class="container">
-				<div class="item">
-					<div class="arrow"><i class="fas fa-check"></i></div>
-					<h3>Десятки добровольных ликвидаций ежемесячно</h3>
-					<p>Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических лиц.</p>
+	<div class="our-advantages">
+		<div class="our-advantages__inner overlay">
+			<div class="our-advantages__second-inner container">
+				<div class="our-advantages__item">
+					<div class="our-advantages__arrow"><i class="fas fa-check"></i></div>
+					<h3 class="our-advantages__item-title">Десятки добровольных ликвидаций ежемесячно</h3>
+					<p class="our-advantages__item-text">Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических лиц.</p>
 				</div>
-				<div class="item">
-					<div class="arrow"><i class="fas fa-check"></i></div>
-					<h3>Отличное знание законов в сфере банкротства </h3>
-					<p>Позволяют нам эффективно отстаивать как интересы кредиторов, так и интересы собственников проблемной организации.</p>
+				<div class="our-advantages__item">
+					<div class="our-advantages__arrow"><i class="fas fa-check"></i></div>
+					<h3 class="our-advantages__item-title">Отличное знание законов в сфере банкротства </h3>
+					<p class="our-advantages__item-text">Позволяют нам эффективно отстаивать как интересы кредиторов, так и интересы собственников проблемной организации.</p>
 				</div>
-				<div class="item">
-					<div class="arrow"><i class="fas fa-check"></i></div>
-					<h3>Большой опыт сопровождения банкротства</h3>
-					<p>Мы обладаем большим опытом сопровождения процедур банкротства предприятий.</p>
+				<div class="our-advantages__item">
+					<div class="our-advantages__arrow"><i class="fas fa-check"></i></div>
+					<h3 class="our-advantages__item-title">Большой опыт сопровождения банкротства</h3>
+					<p class="our-advantages__item-text">Мы обладаем большим опытом сопровождения процедур банкротства предприятий.</p>
 				</div>
 			</div>
 		</div>

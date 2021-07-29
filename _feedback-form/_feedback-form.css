@@ -1,0 +1,93 @@
+.feedback-form {
+  padding-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "email message message" "phone message message" "name message message" "topic none submit";
+  justify-items: start; }
+
+.feedback-form__item_email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email; }
+
+.feedback-form__item_phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: phone; }
+
+.feedback-form__item_name {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: name; }
+
+.feedback-form__item_topic {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: topic; }
+
+.feedback-form__item_message {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: message; }
+
+.feedback-form__item_submit {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: submit; }
+
+.feedback-form__item {
+  width: 100%; }
+
+.feedback-form__item-description {
+  margin: 25px auto 10px 5px; }
+
+.feedback-form__item-text {
+  border: 1px solid #E6E6E6;
+  padding: 10px;
+  line-height: 18px;
+  width: calc(100% - 50px); }
+
+.feedback-form__item-message {
+  border: 1px solid #E6E6E6;
+  padding: 10px;
+  line-height: 18px;
+  width: calc(100% - 22px);
+  height: 216px;
+  resize: none; }
+
+.feedback-form__menu {
+  border: 1px solid #E6E6E6;
+  padding: 10px;
+  padding-right: 30px;
+  width: calc(100% - 30px); }
+
+.feedback-form__menu-item {
+  height: 18px; }
+
+.feedback-form__item_submit {
+  -ms-grid-column-align: right;
+  justify-self: right;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: #fff;
+  cursor: pointer; }
+
+@media (max-width: 500px) {
+  .feedback-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .feedback-form__item-text {
+    width: calc(100% - 22px); }
+  .feedback-form__menu {
+    width: calc(100% - 2px); }
+  .feedback-form__item_submit {
+    margin-top: 20px;
+    -ms-flex-item-align: end;
+    align-self: flex-end; } }

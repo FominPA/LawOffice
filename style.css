@@ -5,11 +5,14 @@
 @import url("_overlay/_overlay.css");
 @import url("_section-title/_section-title.css");
 @import url("_yellow-button/_yellow-button.css");
+@import url("_feedback-form/_feedback-form.css");
 @import url("_roof/_roof.css");
 @import url("_slider/_slider.css");
 @import url("_header/_header.css");
 @import url("_our-service/_our-service.css");
 @import url("_about-company/_about-company.css");
+@import url("_get-consultation/_get-consultation.css");
+@import url("_our-advantages/_our-advantages.css");
 * {
   margin: 0;
   padding: 0; }
@@ -46,169 +49,6 @@ p {
 
 .text_underline {
   text-decoration: underline; }
-
-#ToGetConsultation .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-#ToGetConsultation .text-content {
-  width: 850px; }
-  #ToGetConsultation .text-content form {
-    padding-bottom: 40px;
-    display: -ms-grid;
-    display: grid;
-    grid-template-areas: "email message message" "phone message message" "name message message" "topic none submit";
-    justify-items: start; }
-    #ToGetConsultation .text-content form .email {
-      -ms-grid-row: 1;
-      -ms-grid-column: 1;
-      grid-area: email; }
-    #ToGetConsultation .text-content form .phone {
-      -ms-grid-row: 2;
-      -ms-grid-column: 1;
-      grid-area: phone; }
-    #ToGetConsultation .text-content form .name {
-      -ms-grid-row: 3;
-      -ms-grid-column: 1;
-      grid-area: name; }
-    #ToGetConsultation .text-content form .topic {
-      -ms-grid-row: 4;
-      -ms-grid-column: 1;
-      grid-area: topic; }
-    #ToGetConsultation .text-content form .message {
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 3;
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 2;
-      grid-area: message; }
-    #ToGetConsultation .text-content form .submit {
-      -ms-grid-row: 4;
-      -ms-grid-column: 3;
-      grid-area: submit; }
-    #ToGetConsultation .text-content form > div {
-      width: 100%; }
-    #ToGetConsultation .text-content form .description {
-      margin: 25px auto 10px 5px; }
-    #ToGetConsultation .text-content form input.text {
-      border: 1px solid #E6E6E6;
-      padding: 10px;
-      line-height: 18px;
-      width: calc(100% - 50px); }
-    #ToGetConsultation .text-content form textarea {
-      border: 1px solid #E6E6E6;
-      padding: 10px;
-      line-height: 18px;
-      width: calc(100% - 22px);
-      height: 216px;
-      resize: none; }
-    #ToGetConsultation .text-content form select {
-      border: 1px solid #E6E6E6;
-      padding: 10px;
-      padding-right: 30px;
-      width: calc(100% - 30px); }
-      #ToGetConsultation .text-content form select option {
-        height: 18px; }
-    #ToGetConsultation .text-content form .yellow-button {
-      -ms-grid-column-align: right;
-      justify-self: right;
-      -ms-flex-item-align: end;
-      align-self: flex-end; }
-
-#ToGetConsultation img {
-  width: calc(100% - 850px); }
-
-@media (max-width: 1100px) {
-  #ToGetConsultation img {
-    display: none; }
-  #ToGetConsultation .text-content {
-    width: 100%; } }
-
-@media (max-width: 500px) {
-  #ToGetConsultation .text-content form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    #ToGetConsultation .text-content form input.text {
-      width: calc(100% - 22px); }
-    #ToGetConsultation .text-content form select {
-      width: calc(100% - 2px); }
-    #ToGetConsultation .text-content form .submit {
-      margin-top: 20px;
-      -ms-flex-item-align: end;
-      align-self: flex-end; } }
-
-#OurAdvantages {
-  background-image: url("images/our-advantages-background.png");
-  background-size: cover;
-  background-position: 0 100%; }
-  #OurAdvantages .container {
-    padding: 65px 15px 40px;
-    height: 180px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  #OurAdvantages .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    width: 335px; }
-    #OurAdvantages .item h3 {
-      margin: 15px auto; }
-    #OurAdvantages .item p {
-      color: #D3D2D2; }
-    #OurAdvantages .item .arrow {
-      border: 2px solid #FFC222;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      height: 36px;
-      width: 36px; }
-
-@media (max-width: 1180px) {
-  #OurAdvantages {
-    background-position: 80% 0; }
-    #OurAdvantages .container {
-      display: block;
-      height: auto; }
-      #OurAdvantages .container .item {
-        margin: 50px auto; } }
-
-@media (max-width: 380px) {
-  #OurAdvantages .container .item {
-    width: 100%; } }
 
 #News {
   background-color: #f9f9f9; }

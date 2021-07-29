@@ -1,0 +1,66 @@
+.feedback-form {
+	padding-bottom: 40px;
+	display: grid;
+	grid-template-areas: 
+	"email message message"
+	"phone message message"
+	"name message message"
+	"topic none submit";
+	justify-items: start;
+}
+
+.feedback-form__item_email { grid-area: email; }
+.feedback-form__item_phone { grid-area: phone; }
+.feedback-form__item_name { grid-area: name; }
+.feedback-form__item_topic { grid-area: topic; }
+.feedback-form__item_message { grid-area: message; }
+.feedback-form__item_submit { grid-area: submit; }
+
+.feedback-form__item { width: 100%; }
+
+.feedback-form__item-description {
+	margin: 25px auto 10px 5px;
+}
+
+.feedback-form__item-text {
+	border: 1px solid #E6E6E6;
+	padding: 10px;
+	line-height: 18px;
+	width: calc(100% - 50px);
+}
+
+.feedback-form__item-message {
+	border: 1px solid #E6E6E6;
+	padding: 10px;
+	line-height: 18px;
+	width: calc(100% - 22px);
+	height: 216px;
+	resize: none;
+}
+
+.feedback-form__menu {
+	border: 1px solid #E6E6E6;
+	padding: 10px;
+	padding-right: 30px;
+	width: calc(100% - 30px);
+}
+
+.feedback-form__menu-item { height: 18px; }
+
+.feedback-form__item_submit {  
+	justify-self: right;
+	align-self: flex-end;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width: 500px) {
+	.feedback-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.feedback-form__item-text { width: calc(100% - 22px); }
+	.feedback-form__menu { width: calc(100% - 2px); }
+	.feedback-form__item_submit { margin-top: 20px; align-self: flex-end; }
+}

@@ -1,0 +1,15 @@
+.get-consultation__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.get-consultation__content { width: 850px; }
+
+.get-consultation__aside-image { width: calc(100% - 850px); }
+
+@media (max-width: 1100px) {
+	.get-consultation__aside-image { display: none; }
+	.get-consultation__content { width: 100%; }
+}
