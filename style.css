@@ -13,6 +13,7 @@
 @import url("_about-company/_about-company.css");
 @import url("_get-consultation/_get-consultation.css");
 @import url("_our-advantages/_our-advantages.css");
+@import url("_news/_news.css");
 * {
   margin: 0;
   padding: 0; }
@@ -49,119 +50,6 @@ p {
 
 .text_underline {
   text-decoration: underline; }
-
-#News {
-  background-color: #f9f9f9; }
-  #News .news-content .slider {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    #News .news-content .slider .opened-news-article {
-      background-color: #fff;
-      -webkit-box-shadow: 0 0 27px 7px rgba(91, 89, 89, 0.14);
-      box-shadow: 0 0 27px 7px rgba(91, 89, 89, 0.14);
-      width: 415px;
-      padding: 0 70px; }
-      #News .news-content .slider .opened-news-article .quote-icon {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 35px;
-        width: 65px;
-        background-color: #FFC222;
-        color: white; }
-      #News .news-content .slider .opened-news-article .text {
-        padding: 35px 0; }
-        #News .news-content .slider .opened-news-article .text p {
-          margin: 25px 0; }
-    #News .news-content .slider .closed-news-article {
-      width: 265px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      padding-bottom: 35px; }
-      #News .news-content .slider .closed-news-article .news-photo {
-        width: 265px;
-        height: 190px;
-        background-size: cover; }
-        #News .news-content .slider .closed-news-article .news-photo .day {
-          display: inline-block;
-          margin-left: 10px;
-          padding: 10px;
-          padding-top: 30px;
-          background-color: #FFC222;
-          color: white; }
-      #News .news-content .slider .closed-news-article .news-photo-1 {
-        background-image: url("images/news-photo-1.png"); }
-      #News .news-content .slider .closed-news-article .news-photo-2 {
-        background-image: url("images/news-photo-2.png"); }
-      #News .news-content .slider .closed-news-article p {
-        color: #5e5e5e; }
-  #News .news-content .bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 30px 0; }
-    #News .news-content .bottom .arrow {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      border: 1px solid #908E8E;
-      color: #908e8e;
-      cursor: pointer;
-      margin: 0 9px; }
-      #News .news-content .bottom .arrow:hover {
-        background-color: #FFC222;
-        border-color: #FFC222;
-        color: white; }
-
-@media (max-width: 1170px) {
-  #News .news-content .slider {
-    width: 555px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: auto; }
-    #News .news-content .slider .opened-news-article {
-      margin-bottom: 30px; } }
-
-@media (max-width: 600px) {
-  #News .news-content .slider {
-    width: 100%; }
-    #News .news-content .slider .opened-news-article {
-      text-align: center;
-      padding: 0 10%;
-      margin-bottom: 0; }
-    #News .news-content .slider .closed-news-article {
-      display: none; } }
 
 #Contacts {
   background-color: #595959;
